@@ -28,7 +28,7 @@ const writeBootstrap = (context: string, entryPath: string) => {
   }
   fs.writeFileSync(bootstrapPath, generateBootstrap(context, entryPath));
 };
-export const withModuleFederation = async (
+export const withModuleFederation = (
   rsbuildConfig: RsbuildConfig,
   options: moduleFederationPlugin.ModuleFederationPluginOptions,
 ) => {
